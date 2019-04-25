@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Axel.cpp" />
+    <ClCompile Include="CarControl.cpp" />
+    <ClCompile Include="CarState.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="SimpleParser.cpp" />
+    <ClCompile Include="WrapperBaseDriver.cpp" />
+    <ClCompile Include="robot_axel\AI.cpp">
+      <Filter>RobotAxel</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_axel\Genome.cpp">
+      <Filter>RobotAxel</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_axel\Gym.cpp">
+      <Filter>RobotAxel</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_axel\Random_Generator.cpp">
+      <Filter>RobotAxel</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_axel\Settings.cpp">
+      <Filter>RobotAxel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Axel.hpp" />
+    <ClInclude Include="BaseDriver.h" />
+    <ClInclude Include="CarControl.h" />
+    <ClInclude Include="CarState.h" />
+    <ClInclude Include="SimpleParser.h" />
+    <ClInclude Include="WrapperBaseDriver.h" />
+    <ClInclude Include="robot_axel\AI.hpp">
+      <Filter>RobotAxel</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_axel\Genome.hpp">
+      <Filter>RobotAxel</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_axel\Gym.hpp">
+      <Filter>RobotAxel</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_axel\Random_Generator.hpp">
+      <Filter>RobotAxel</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_axel\Settings.hpp">
+      <Filter>RobotAxel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RobotAxel">
+      <UniqueIdentifier>{c338652c-ed2b-4e49-9814-18d63e4979c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

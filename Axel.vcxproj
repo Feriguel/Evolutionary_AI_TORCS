@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{f02cf90d-22e2-4745-9f12-b1a66f046550}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Axel</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="Axel.cpp" />
+    <ClCompile Include="CarControl.cpp" />
+    <ClCompile Include="CarState.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="robot_axel\AI.cpp" />
+    <ClCompile Include="robot_axel\Genome.cpp" />
+    <ClCompile Include="robot_axel\Gym.cpp" />
+    <ClCompile Include="robot_axel\Random_Generator.cpp" />
+    <ClCompile Include="robot_axel\Settings.cpp" />
+    <ClCompile Include="SimpleParser.cpp" />
+    <ClCompile Include="WrapperBaseDriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Axel.hpp" />
+    <ClInclude Include="BaseDriver.h" />
+    <ClInclude Include="CarControl.h" />
+    <ClInclude Include="CarState.h" />
+    <ClInclude Include="robot_axel\AI.hpp" />
+    <ClInclude Include="robot_axel\Genome.hpp" />
+    <ClInclude Include="robot_axel\Gym.hpp" />
+    <ClInclude Include="robot_axel\Random_Generator.hpp" />
+    <ClInclude Include="robot_axel\Settings.hpp" />
+    <ClInclude Include="SimpleParser.h" />
+    <ClInclude Include="WrapperBaseDriver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
